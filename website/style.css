@@ -1,0 +1,152 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  height: 100vh;
+}
+body {
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+
+  background: url("./images/background.jpg") no-repeat;
+  background-size: cover;
+}
+
+#app {
+  text-align: center;
+  background-color: #ddd;
+  width: fit-content;
+  margin: 10px auto 0px;
+  border-radius: 10px;
+
+  padding: 30px;
+}
+
+.headline {
+  font-size: 40px;
+  font-weight: bold;
+  color: #e67300;
+  /* background-color: #eee; */
+  width: fit-content;
+  margin: 0px auto 20px;
+  padding: 15px 25px;
+  border-radius: 6px;
+}
+
+input,
+textarea {
+  width: 320px;
+  margin-bottom: 30px;
+  padding: 10px;
+  background-color: #333399;
+  color: #f0d43a;
+  font-size: 18px;
+  border: none;
+  box-shadow: 2px 4px 5px #333399;
+  border-radius: 6px;
+}
+
+input {
+  height: 60px;
+}
+
+textarea {
+  height: 180px;
+}
+
+button {
+  width: 250px;
+  padding: 10px;
+  height: 60px;
+  background-color: #339933;
+  color: #f0d43a;
+  font-weight: bold;
+  font-size: 26px;
+  border: none;
+  box-shadow: 2px 4px 5px #339933;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+button:hover .headline {
+  /* display: block; */
+  /* color: white; */
+}
+
+#entryHolder div {
+  text-align: start;
+  padding: 0px 20px;
+}
+
+#entryHolder div:not(:last-of-type) {
+  margin-bottom: 5px;
+}
+
+.entry {
+  min-width: 500px;
+  padding: 25px;
+  text-align: center;
+  width: fit-content;
+  margin: 20px auto 0px;
+  background-color: #66ccff;
+  /* color: white; */
+  display: none;
+  border-radius: 6px;
+  font-size: 25px;
+  color: #e67300;
+  font-weight: bold;
+}
+
+.entry .title {
+  font-size: 35px;
+  font-weight: bold;
+  color: #333399;
+  margin-bottom: 10px;
+}
+
+.entry span {
+  font-weight: bold;
+  color: #336600;
+  min-width: 170px !important;
+  display: inline-block;
+  font-weight: bold;
+}
+
+/* .entry span:not(:last-of-type) {
+  margin-bottom: 5px;
+} */
+
+/* #date,
+#temp,
+#content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+
+/* Reset style for HTML element on active to have no border*/
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+  outline: none;
+}
+/* Style for Placeholder Text*/
+::placeholder {
+  /* Firefox, Chrome, Opera */
+  color: #f0d43a;
+  font-family: "Oswald", sans-serif;
+}
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #f0d43a;
+  font-family: "Oswald", sans-serif;
+}
+
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: #f0d43a;
+  font-family: "Oswald", sans-serif;
+}
